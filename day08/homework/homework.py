@@ -13,16 +13,10 @@ for i in range(1, 11):
 
 
 # 2)დაბეჭდე სიტყვა "Hello world" ხუთჯერ, ყოველი დაბეჭდვა ახალ ხაზზე.
-print("Hello world")
-print()
-print("Hello world")
-print()
-print("Hello world")
-print()
-print("Hello world")
-print()
-print("Hello world")
-
+i = 0
+while i < 5:
+    print("hello world")
+    i += 1
 
 
 # 3) გამოიყენე for ციკლი, რომ დაბეჭდო მხოლოდ ლუწი რიცხვები  10.
