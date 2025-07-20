@@ -1,0 +1,58 @@
+<!-- დავალება 3: ჯანსაღი კვების კითხვარი
+შექმენი პატარა ფორმა, სადაც ბავშვი პასუხობს როგორ იკვებება.
+
+უნდა ჰქონდეს:
+
+შენი სახელი
+
+დღის რომელ საკვებს ყველაზე ხშირად ჭამ? (text input)
+
+სვამ თუ არა წყალს დღეში 5-ჯერ ან მეტჯერ? (radio – კი / არა)
+
+გიყვარს ბოსტნეული? (radio – კი / არა)
+
+ღილაკი: „გაგზავნა“ -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>ჯანსაღი კვების კითხვარი</title>
+</head>
+<body>
+
+    <h2>ჯანსაღი კვების კითხვარი</h2>
+
+    <form action="thanks.html" method="get">
+        <p>
+            <label>შენი სახელი:<br>
+                <input type="text" name="name">
+            </label>
+        </p>
+
+        <p>
+            <label>დღის რომელ საკვებს ყველაზე ხშირად ჭამ?<br>
+                <input type="text" name="meal">
+            </label>
+        </p>
+
+        <p>
+            სვამ თუ არა წყალს დღეში 5-ჯერ ან მეტჯერ?<br>
+            <label><input type="radio" name="water" value="კი"> კი</label><br>
+            <label><input type="radio" name="water" value="არა"> არა</label>
+        </p>
+
+        <p>
+            გიყვარს ბოსტნეული?<br>
+            <label><input type="radio" name="veggies" value="კი"> კი</label><br>
+            <label><input type="radio" name="veggies" value="არა"> არა</label>
+        </p>
+
+        <p>
+            <button type="submit">გაგზავნა</button>
+        </p>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!-- დავალება 4: მინი ექსკურსიის განაცხადი
+სკოლაში იქნება პატარა გასეირნება. შექმენი ფორმა განაცხადისთვის.
+
+უნდა ჰქონდეს:
+
+სახელი და გვარი
+
+რომელ კლასში ხარ?
+
+გინდა წასვლა? (radio – კი / არა)
+
+გინდა წამოიღო საჭმელი? (checkbox)
+
+მშობლის ტელეფონის ნომერი
+
+ღილაკი: „დადასტურება“ -->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>მინი ექსკურსიის განაცხადი</title>
+</head>
+<body>
+
+    <h2>მინი ექსკურსიის განაცხადი</h2>
+
+    <form action="confirmed.html" method="get">
+        <p>
+            <label>სახელი და გვარი:<br>
+                <input type="text" name="fullname">
+            </label>
+        </p>
+
+        <p>
+            <label>რომელ კლასში ხარ?<br>
+                <input type="text" name="class">
+            </label>
+        </p>
+
+        <p>
+            გინდა წასვლა?<br>
+            <label><input type="radio" name="go" value="კი"> კი</label><br>
+            <label><input type="radio" name="go" value="არა"> არა</label>
+        </p>
+
+        <p>
+            <label>
+                <input type="checkbox" name="food" value="კი">
+                გინდა წამოიღო საჭმელი?
+            </label>
+        </p>
+
+        <p>
+            <label>მშობლის ტელეფონის ნომერი:<br>
+                <input type="text" name="parent_phone">
+            </label>
+        </p>
+
+        <p>
+            <button type="submit">დადასტურება</button>
+        </p>
+    </form>
+
+</body>
+</html>
