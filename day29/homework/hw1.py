@@ -12,6 +12,6 @@ def transform_sentence(text):
         else:
             lst.append(word)
             word = ''
-    lst.append(word)  # უკანასკნელი სიტყვა
+    lst.append(word) 
     
     return ', '.join(lst)
