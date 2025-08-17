@@ -1,0 +1,40 @@
+<!-- 3) Internal CSS-ის გამოყენებით შექმენი გვერდი,  ყველა <p> ქონდეს ერთი სტილი. ერთი პარაგრაფი შეცვალე id-ით, მეორე – class-ით. -->
+
+
+
+    <!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Internal CSS მაგალითი</title>
+  <style>
+    p {
+      font-size: 18px;
+      color: darkblue;
+      background-color: lightgray;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    #special {
+      color: red;
+      font-weight: bold;
+      background-color: yellow;
+    }
+
+    .highlight {
+      color: green;
+      font-style: italic;
+      background-color: #dfe1df;
+    }
+  </style>
+</head>
+<body>
+  <h1>Internal CSS მაგალითი</h1>
+
+  <p>ეს არის პირველი პარაგრაფი, რომელსაც საერთო სტილი აქვს.</p>
+  <p id="special">ეს პარაგრაფი შეიცვალა id="special"-ით.</p>
+  <p class="highlight">ეს პარაგრაფი შეიცვალა class="highlight"-ით.</p>
+  <p>ეს არის კიდევ ერთი ჩვეულებრივი პარაგრაფი.</p>
+</body>
+</html>
