@@ -1,0 +1,56 @@
+<!-- 4) შექმენი HTML ფაილი, სადაც იქნება ერთი div კლასით container,
+გადაიტანეთ ცენტრში ეს დივი და ასევე ამ დივში ჩასვით 2 შვილი დივი და ისინიც გადაიტანეთ container-ის ცენტრში. (კარგად გასტილეთ!) -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Centered Divs</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      padding-top: 50px;
+    }
+    .container {
+      width: 400px;
+      padding: 20px;
+      background-color: #4a90e2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      gap: 20px;
+    }
+    .child {
+      width: 120px;
+      height: 120px;
+      background-color: white;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #333;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="child">Child 1</div>
+    <div class="child">Child 2</div>
+  </div>
+</body>
+</html>
