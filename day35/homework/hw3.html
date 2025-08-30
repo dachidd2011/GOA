@@ -1,0 +1,39 @@
+<!-- 3) შექმენი 5 ბლოკი. დაალაგე ვერტიკალურად და მოათავსე ეკრანის შუაში. დააშორე ერთმანეთისგან 50px-ით. -->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>5 ბლოკი</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    .box {
+      width: 80px;
+      height: 80px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
