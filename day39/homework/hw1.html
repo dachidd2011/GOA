@@ -1,0 +1,38 @@
+<!-- 1) შექმენი 3 ბლოკი (div), დაალაგე ჰორიზონტალურად ცენტრში. -->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ბლოკების განლაგება</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background: teal;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>

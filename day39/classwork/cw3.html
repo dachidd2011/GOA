@@ -1,0 +1,32 @@
+<!-- 3) კომენტარების გამოყენებით ახსენით display: block და მასზე გააკეთეთ მაგალთი -->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>display:block მაგალითი</title>
+  <style>
+    /* 
+    display:block → ელემენტი იკავებს მთელ სიგანეს 100% default-ად,
+    ანუ ავტომატურად ახალ ხაზზე გადადის.
+    ზემოდან და ქვემოდან სხვა ელემენტები უკვე მის ქვემოთ დგებიან.
+    */
+    .block-example {
+      display: block; 
+      background-color: lightcoral; /* ფონის ფერი რომ გამოვაჩინოთ */
+      padding: 10px;
+      border: 2px solid red;
+      margin-bottom: 10px; /* დაშორება ქვემოთ ელემენტებთან */
+    }
+  </style>
+</head>
+<body>
+  <!-- სამივე ელემენტი ბლოკური ფორმისაა,
+       ამიტომ თითოეული ახალ ხაზზე გამოჩნდება -->
+  <span class="block-example">ელემენტი 1</span>
+  <span class="block-example">ელემენტი 2</span>
+  <span class="block-example">ელემენტი 3</span>
+</body>
+</html>

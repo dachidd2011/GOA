@@ -1,0 +1,51 @@
+<!-- 4) შექმენი header (ლოგო მარცხნივ, მენიუ ცენტრში, search მარჯვენა მხარეს) Flexbox-ით. -->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Header</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #1e293b;
+      color: white;
+    }
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .search input {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>Logo</div>
+    <nav>
+      <a href="#">მთავარი</a>
+      <a href="#">ჩვენ შესახებ</a>
+      <a href="#">სერვისები</a>
+      <a href="#">კონტაქტი</a>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="ძებნა...">
+      <button>🔍</button>
+    </div>
+  </header>
+</body>
+</html>

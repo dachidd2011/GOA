@@ -1,0 +1,41 @@
+<!-- 5) შექმენი ქვემოთ გაწოლილი ღილაკების პანელი:
+ყველა ღილაკი თანაბარი ზომის უნდა იყოს
+ჰორიზონტალურად ცენტრში განლაგდეს. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ღილაკების პანელი</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .panel {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .panel button {
+      width: 100px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <button>Home</button>
+    <button>Search</button>
+    <button>Profile</button>
+    <button>Settings</button>
+    <button>More</button>
+  </div>
+</body>
+</html>
