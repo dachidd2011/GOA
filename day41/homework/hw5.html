@@ -1,0 +1,35 @@
+<!-- 5) შექმენი div კონტეინერი (მაგ. 300x300px, ფერი lightgray).
+კონტეინერის შიგნით ჩასვი პატარა კვადრატი.
+კონტეინერს მიეცი relative;
+პატარა კვადრატს მიეცი position: absolute; top: 10px; right: 10px;
+რაც მოხდება ახსენი კომენტარებით -->
+
+
+
+
+<div class="container">
+  <div class="small-box"></div>
+</div>
+
+<style>
+.container {
+  width: 300px;
+  height: 300px;
+  background: lightgray;
+  position: relative;
+  /* კონტეინერს მივეცით relative,
+     რომ absolute შვილები მის მიმართ განლაგდნენ. */
+}
+
+.small-box {
+  width: 80px;
+  height: 80px;
+  background: tomato;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* absolute შვილობილი გამოეყო ჩვეულებრივ ნაკადს
+     და განლაგდა მშობელი კონტეინერის მიმართ,
+     ზუსტად ზედა-მარჯვენა კუთხეში (10px დაშორებით). */
+}
+</style>

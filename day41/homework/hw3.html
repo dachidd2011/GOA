@@ -1,0 +1,41 @@
+<!-- 3) შექმენი სამი div კვადრატი (100x100px) სხვადასხვა ფერებით.
+მათ ყველას მიეცი static.
+ნახე, როგორ დგანან ჩვეულებრივად ერთმანეთის ქვემოთ და ახსენი კომენტარებით. -->
+
+
+
+
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+
+<style>
+.box1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: static; 
+  /* static არის default.
+     ელემენტები დგანან ჩვეულებრივ ნაკადში
+     და ერთმანეთის ქვემოთ ჩნდებიან. */
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: static;
+  /* როგორც box1, ესეც ჩვეულებრივ ნაკადშია,
+     ამიტომ ავტომატურად box1-ის ქვემოთ ჯდება. */
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  position: static;
+  /* static-ის გამო ესეც მოყვება ქვემოთ,
+     ერთი მეორის ქვეშ ლაგდებიან. */
+}
+</style>
